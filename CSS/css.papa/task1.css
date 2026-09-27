@@ -1,0 +1,46 @@
+/* Демо-хедер */
+.demo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+/* Ряд карточек */
+.cards {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1 1 250px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.card:hover {
+  background: #f0f0f0;
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.card .body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 8px;
+}
+
+.card .body p {
+  flex: 1;
+}

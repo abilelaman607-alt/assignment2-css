@@ -1,0 +1,47 @@
+/* Grid-макет */
+.layout {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  grid-template-areas:
+    "head head"
+    "side main"
+    "foot foot";
+  gap: 10px;
+}
+
+.layout > * {
+  padding: 15px;
+  border: 1px solid #999;
+}
+
+.head {
+  grid-area: head;
+  background: #ddd;
+}
+
+.side {
+  grid-area: side;
+  background: #eee;
+}
+
+.main {
+  grid-area: main;
+  min-height: 200px;
+}
+
+.foot {
+  grid-area: foot;
+  background: #ddd;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .layout {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "head"
+      "side"
+      "main"
+      "foot";
+  }
+}

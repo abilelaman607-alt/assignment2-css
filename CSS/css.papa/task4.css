@@ -1,0 +1,48 @@
+/* Flex + Grid */
+.main-block {
+  display: grid;
+  grid-template-columns: 1fr 220px;
+  gap: 15px;
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+.proj-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.proj {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.proj p {
+  flex: 1;
+}
+
+.side-block {
+  border: 1px solid #ccc;
+  padding: 15px;
+  align-self: start;
+}
+
+.side-block ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.side-block li {
+  padding: 4px 0;
+}
+
+@media (max-width: 600px) {
+  .main-block {
+    grid-template-columns: 1fr;
+  }
+}
