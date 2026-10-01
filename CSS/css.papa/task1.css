@@ -1,4 +1,3 @@
-/* Демо-хедер */
 .demo {
   display: flex;
   align-items: center;
@@ -8,7 +7,6 @@
   margin-bottom: 20px;
 }
 
-/* Ряд карточек */
 .cards {
   display: flex;
   gap: 15px;
