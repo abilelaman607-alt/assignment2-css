@@ -1,4 +1,3 @@
-/* Flex + Grid */
 .main-block {
   display: grid;
   grid-template-columns: 1fr 220px;
